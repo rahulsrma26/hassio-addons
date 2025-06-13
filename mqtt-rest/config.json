@@ -24,6 +24,19 @@
     "MQTT_PASS": "",
     "MQTT_LOG": ""
   },
+  "schema": {
+    "SERVER_IP": "str?",
+    "SERVER_PORT": "int?",
+    "PGID": "int",
+    "PUID": "int",
+    "TZ": "str?",
+    "SERVER_LOG_LEVEL": "str?",
+    "BROKER_IP": "str?",
+    "BROKER_PORT": "int?",
+    "MQTT_USER": "str?",
+    "MQTT_PASS": "str?",
+    "MQTT_LOG": "str?"
+  },
   "init": false,
   "options": {
     "CONFIG_LOCATION": "/config/addons_config/mqtt-rest"
