@@ -1,0 +1,39 @@
+{
+  "arch": [
+    "amd64"
+  ],
+  "description": "A REST API for MQTT Client Management",
+  "image": "welcometors/mqtt-rest",
+  "url": "https://github.com/rahulsrma26/mqtt-rest",
+  "version": "0.8.1",
+  "map": [
+    "addon_config:rw",
+    "share:rw"
+  ],
+  "name": "mqtt-rest",
+  "environment": {
+    "SERVER_IP": "0.0.0.0",
+    "SERVER_PORT": "9000",
+    "PGID": "0",
+    "PUID": "0",
+    "TZ": "Europe/London",
+    "SERVER_LOG_LEVEL": "info",
+    "BROKER_IP": "localhost",
+    "BROKER_PORT": "1883",
+    "MQTT_USER": "",
+    "MQTT_PASS": "",
+    "MQTT_LOG": ""
+  },
+  "init": false,
+  "options": {
+    "CONFIG_LOCATION": "/config/addons_config/mqtt-rest"
+  },
+  "ports": {
+    "9000/tcp": 9988
+  },
+  "ports_description": {
+    "9000/tcp": "Api interface"
+  },
+  "slug": "mqtt-rest",
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:9988]/docs"
+}
