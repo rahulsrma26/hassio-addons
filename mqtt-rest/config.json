@@ -13,33 +13,30 @@
   "name": "mqtt-rest",
   "environment": {
     "SERVER_IP": "0.0.0.0",
-    "SERVER_PORT": "9000",
-    "PGID": "0",
-    "PUID": "0",
-    "TZ": "Europe/London",
-    "SERVER_LOG_LEVEL": "info",
-    "BROKER_IP": "localhost",
-    "BROKER_PORT": "1883",
-    "MQTT_USER": "",
-    "MQTT_PASS": "",
-    "MQTT_LOG": ""
+    "SERVER_PORT": "9000"
   },
   "schema": {
-    "SERVER_IP": "str?",
-    "SERVER_PORT": "int?",
-    "PGID": "int",
-    "PUID": "int",
+    "MQTT_USER": "str",
+    "MQTT_PASS": "str",
+    "MQTT_LOG": "str?",
     "TZ": "str?",
     "SERVER_LOG_LEVEL": "str?",
     "BROKER_IP": "str?",
     "BROKER_PORT": "int?",
-    "MQTT_USER": "str?",
-    "MQTT_PASS": "str?",
-    "MQTT_LOG": "str?"
+    "PGID": "int?",
+    "PUID": "int?"
   },
   "init": false,
   "options": {
-    "CONFIG_LOCATION": "/config/addons_config/mqtt-rest"
+    "MQTT_USER": "",
+    "MQTT_PASS": "",
+    "MQTT_LOG": "",
+    "TZ": "Europe/London",
+    "SERVER_LOG_LEVEL": "info",
+    "BROKER_IP": "localhost",
+    "BROKER_PORT": "1883",
+    "PGID": "0",
+    "PUID": "0"
   },
   "ports": {
     "9000/tcp": 9988
